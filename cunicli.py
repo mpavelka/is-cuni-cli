@@ -94,9 +94,10 @@ def login(ctx, username, password):
 			click.echo("Session stored to {}.".format(ctx_get_session_file(ctx)))
 		else:
 			click.echo("[WARNING] Session not stored.")
-		
+
 	else:
 		click.echo("[ERROR] Couldn't log in user.")
+		sys.exit(1)
 
 
 
